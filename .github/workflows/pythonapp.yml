@@ -25,5 +25,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.DOCKERPW }}" | docker login -u darkages89 --password-stdin
-        docker image build -t johndavidmarx/gitops:hellov1.3 .
-        docker push johndavidmarx/gitops:hellov1.3
+        docker image build -t darkages89/gitops:hellov1.3 .
+        docker push darkages89/gitops:hellov1.3
